@@ -1,10 +1,17 @@
 import React from 'react';
+import 'regenerator-runtime'
+
+import StoreProvider from './store/StoreProvider'
 
 import './App.scss';
 
-const App = () =>{
+const App = () =>(
+<StoreProvider>
+  <header>Hello World!</header>
+</StoreProvider>
+)
   
-  return <header>Hello World!</header>
-}
+   
+
 
 export default App;
